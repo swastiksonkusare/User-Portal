@@ -1,0 +1,83 @@
+.user-card {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+   
+  
+    &:hover {
+      box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+
+    }
+  
+    .circle {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      &.green {
+        background-color: #4caf50;
+      }
+      &.purple {
+        background-color: #673ab7;
+      }
+      &.orange {
+        background-color: #ff9800;
+      }
+    }
+
+    .user-name {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      border-bottom: 1px solid #000;
+      
+    }
+    
+    .user-info {
+      padding: 1rem;
+      border-bottom: 1px solid #000;
+      h2 {
+        font-size: 24px;
+        margin: 0;
+      }
+      p {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        font-size: 16px;
+        margin: 5px 0;
+
+        text-transform: uppercase;
+        
+        small {
+          font-size: 1.2rem;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+      }
+    }
+  
+    .user-actions {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1rem;
+
+      
+    @media only screen and (max-width: 40em) {
+    flex-wrap: wrap;
+      gap: .6rem;
+    }
+
+      button {
+        margin-top: 0;
+      }
+  
+     
+    }
+  }
+  
