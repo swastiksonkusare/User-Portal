@@ -27,3 +27,11 @@
     font-weight: bold;
   }
   
+
+   
+  @media only screen and (max-width: 25em) {
+    .pagination {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }

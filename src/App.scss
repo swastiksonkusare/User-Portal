@@ -28,6 +28,10 @@ html {
   font-size: 90%;
   font-family: 'Heebo', sans-serif;
   
+  @media only screen and (max-width: 30em) {
+    font-size: 50%;
+  }
+  
 }
 
 
@@ -35,7 +39,8 @@ body {
     position: relative;
     min-height: 100vh;
     box-sizing: border-box;
-    // padding: 2rem;
+
+
 }
 
 label {
@@ -48,10 +53,11 @@ label {
   grid-template-columns: repeat(auto-fit, minmax(320px, 450px));
   grid-gap: 20px;
   padding: 0 4rem;
-
-  @media only screen and (max-width: 40em) {
+  
+  @media only screen and (max-width: 25em) {
+    grid-template-columns: 1fr;
     padding: 1rem;
-    }
+  }
 
 }
 
